@@ -1,0 +1,45 @@
+.imageUploader {
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    height: 600px;
+    width: 500px;
+    padding: 20px;
+    grid-template-columns: 200px 200px 100px;
+    grid-template-rows: max-content 50px 1fr;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.imagesContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    grid-row: 3/3;
+}
+
+.uploadFile {
+    grid-column: 3/3;
+    box-shadow: 5px 5px 2px 1px rgb(0 0 0 / 80%);
+    height: 30px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding-top: 10px;
+}
+
+.searchInput {
+    grid-column: 1/1;
+    height: 20px;
+}
+
+ul, li {
+    list-style:none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
+}
